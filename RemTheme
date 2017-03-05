@@ -1,5 +1,5 @@
 :root{
-    --current-version: "2.4";
+    --current-version: "2.6";
 }
 
 /*Version Pop-up*/
@@ -41,7 +41,7 @@ body:before {
 }
 
 .account::after {
-    content: "Rem";
+    content: "Rem Theme";
 	color: #fff;
 	font-size: 11px;
 	font-weight: 700;
@@ -69,7 +69,7 @@ body::after {
 }
 
 /*<*>*/
-/* Alert made by john */
+/* Alert made by John Baez */
 /*ALERT*/
 .tutorial-indicators+.theme-dark:before {
   content: "You need to have the light mode enabled for this theme to work properly. To enable it, go into settings > appearance.";
@@ -126,7 +126,7 @@ body::after {
 
 
 .radio-theme.light:after {
-  content: "ENABLE LIGHT MODE";
+  content: "LIGHT MODE ENABLED"; /*ENABLE LIGHT MODE*/ /*TEMP FIX*/
   display: block;
   color: #fff;
   -webkit-transform: translate(-50%, -32px);
@@ -588,7 +588,7 @@ a:hover,
 	text-shadow: 0 0 1px;
 }
 
-/* CSS BY JOHN) */
+/* BASE CSS BY OMNISCIENT & HAMMOCK & ZERTHOX (EDITED BY john) */
 
 .app {
 	background: transparent;
@@ -1319,7 +1319,9 @@ textarea {
 span.channel-name { /*CHANNEL NAME COLOUR*/
 	color: var(--channel-color) !important;
 }
-
+.layers {  /*VISIBLE BACKGROUND*/
+    background: transparent !important; 
+}
 .theme-light .account { /*ACCOUNT BOX*/
 	background-color: rgba(0, 0, 0, 0.3) !important;
 	border-top-left-radius: 5px !important;
@@ -4793,7 +4795,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 	position: relative;
 }
 .change-log .footer::after {
-	content: "BetterDiscord by Jiiks \2022  Rem by John";
+	content: "BetterDiscord by Jiiks \2022  Rem Theme by John";
 	position: absolute;
 	top: 0;
 	left: 0;
