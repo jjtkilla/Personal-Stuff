@@ -72,7 +72,7 @@ body::after {
 /* Alert made by john */
 /*ALERT*/
 .tutorial-indicators+.theme-dark:before {
-  content: "You need to fuck off light mode, you shitty little prick. had to rewrite everything because of you. enable dark mode my nigga.";
+  content: "You need to have the light mode enabled for this theme to work properly. To enable it, go into settings > appearance.";
   position: fixed;
   display: block;
   width: 400px;
@@ -138,12 +138,12 @@ body::after {
    top: 60px;
 }
 
-.theme-dark+span .radio-theme.light:after {
+.theme-light+span .radio-theme.light:after {
   content: "LIGHT MODE ENABLED";
 	top: 60px;
 }
 
-.radio-theme.light {
+.radio-theme.dark {
   display: none;
 }
 /*SWAP BUTTON*/
@@ -175,16 +175,16 @@ div.platform-osx .theme-dark+span .user-settings-modal .tab-bar.SIDE .tab-bar-it
 	margin-left: -124px;
 	z-index: 1000;
 }
-.theme-dark .account .btn-deafen, .theme-light .account .btn-mute {
+.theme-dark .account .btn-deafen, .theme-dark .account .btn-mute {
 	border-right: 1px solid transparent;
 	display: none;
 }
-.theme-light .account .btn-settings:after {
+.theme-dark .account .btn-settings:after {
 	z-index: 1000;
 	position: absolute;
 	opacity: 1;
 }
-.theme-light .account .btn:after {
+.theme-dark .account .btn:after {
 	content: "CLICK ME FOR SETTINGS";
 	display: block;
 	color: #fff;
@@ -192,11 +192,11 @@ div.platform-osx .theme-dark+span .user-settings-modal .tab-bar.SIDE .tab-bar-it
 	opacity: 1;
 	z-index: 1003;
 }
-.theme-light .account {
+.theme-dark .account {
 	height: 0px;
 	margin-bottom: -30px;
 }
-.theme-light .account .btn-settings:hover::after {
+.theme-dark .account .btn-settings:hover::after {
 		-webkit-animation: load8 0s infinite linear;
 	animation: load8 0s infinite linear;
 }
@@ -547,7 +547,7 @@ a,
 .chat .message-group a,
 .chat .title-wrap .topic a,
 #user-profile-modal .guilds .section .connected-account .connected-account-name a,
-.theme-light .chat .title-wrap .topic a,
+.theme-dark .chat .title-wrap .topic a,
 .markdown-modal a,
 .user-settings-modal a,
 #voice-connection .voice-connection-channel,
@@ -555,7 +555,7 @@ a,
 .alert.form .form-inner .btn-close-forever,
 .guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p a,
 .messages-popout-wrap .messages-popout .channel-separator .channel-name,
-.theme-light .messages-popout-wrap .messages-popout .channel-separator .channel-name,
+.theme-dark .messages-popout-wrap .messages-popout .channel-separator .channel-name,
 .protip .tip a,
 .guild-settings-modal-security .control-group .help-text a,
 #permissions .permissions-helpdeskm,
@@ -571,7 +571,7 @@ a:hover,
 .chat > .content .messages .message-group .markup .highlight:hover,
 .chat .title-wrap .topic a:hover,
 #user-profile-modal .guilds .section .connected-account .connected-account-name a:hover,
-.theme-light .chat .title-wrap .topic a:hover,
+.theme-dark .chat .title-wrap .topic a:hover,
 .markdown-modal a:hover,
 .user-settings-modal a:hover,
 #voice-connection .voice-connection-channel:hover,
@@ -579,7 +579,7 @@ a:hover,
 .alert.form .form-inner .btn-close-forever:hover,
 .guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p a:hover,
 .messages-popout-wrap .messages-popout .channel-separator .channel-name:hover,
-.theme-light .messages-popout-wrap .messages-popout .channel-separator .channel-name:hover,
+.theme-dark .messages-popout-wrap .messages-popout .channel-separator .channel-name:hover,
 .protip .tip a:hover,
 .guild-settings-modal-security .control-group .help-text a:hover,
 #permissions .permissions-helpdesk:hover,
@@ -615,7 +615,7 @@ a:hover,
 	color: var(--main-color);
 }
 .chat>.content .messages .message-group a,
-.theme-light .chat>.content .messages .message-group a {
+.theme-dark .chat>.content .messages .message-group a {
 	color: var(--main-color);
 }
 .need-help-modal .footer {
@@ -903,11 +903,11 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 	background: var(--main-color);
 }
 .chat .welcome-message a,
-.theme-light .chat .welcome-message a {
+.theme-dark .chat .welcome-message a {
 	color: var(--main-color);
 }
 .chat .welcome-message a:hover,
-.theme-light .chat .welcome-message a:hover {
+.theme-dark .chat .welcome-message a:hover {
 	text-shadow: 0 0 1px;
 }
 #permissions ul li {
@@ -1042,7 +1042,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 	margin: 10px 0 30px;
 }
 .chat form,
-.theme-light .chat form {
+.theme-dark .chat form {
 	border-top: none;
 }
 .guilds li.active .guild-inner::before {
@@ -1055,29 +1055,29 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 	background: var(--hover-color);
 }
 .chat>.content .messages .divider:not(.red) div,
-.theme-light .chat>.content .messages .divider:not(.red) div {
+.theme-dark .chat>.content .messages .divider:not(.red) div {
 	background: transparent;
 }
 .chat>.content .messages .divider span,
-.theme-light .chat>.content .messages .divider span {
+.theme-dark .chat>.content .messages .divider span {
 	background: transparent;
 }
 .chat .divider>span {
 	color: #F1F1F1;
 }
 .message-group .comment .markup pre,
-.theme-light .message-group .comment .markup pre {
+.theme-dark .message-group .comment .markup pre {
 	background: rgba(0, 0, 0, 0.42);
 	border: 2px solid rgba(255, 255, 255, 0.1);
 	padding: 5px;
 }
 .message-group .comment .markup pre code,
-.theme-light .message-group .comment .markup pre code {
+.theme-dark .message-group .comment .markup pre code {
 	background: transparent;
 	color: rgba(255, 255, 255, 0.7);
 }
 .chat .title-wrap .topic a,
-.theme-light .chat .title-wrap .topic a {
+.theme-dark .chat .title-wrap .topic a {
 	color: var(--main-color);
 }
 #autocomplete-popout .row.selected a,
@@ -1224,7 +1224,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 	opacity: .7 !important;
 }
 .chat>.content .messages .divider:not(.red) span,
-.theme-light .chat>.content .messages .divider:not(.red) span {
+.theme-dark .chat>.content .messages .divider:not(.red) span {
 	opacity: .9;
 }
 .links li+li::after {
@@ -1296,7 +1296,7 @@ textarea {
 	margin-top: 10px !important;
 	padding-left: 20px !important;
 }
-.theme-dark .guilds { /*SERVERS*/
+.theme-light .guilds { /*SERVERS*/
 	padding-top: 20px !important;
 	margin-top: 80%;
 	margin-bottom: 130%;
@@ -1320,7 +1320,7 @@ span.channel-name { /*CHANNEL NAME COLOUR*/
 	color: var(--channel-color) !important;
 }
 
-.theme-dark .account { /*ACCOUNT BOX*/
+.theme-light .account { /*ACCOUNT BOX*/
 	background-color: rgba(0, 0, 0, 0.3) !important;
 	border-top-left-radius: 5px !important;
 	border-top-right-radius: 5px !important;
@@ -1487,7 +1487,7 @@ span.bot-tag {
 .btn-hamburger span {
 	background: rgb(221, 221, 221);
 }
-.theme-dark .account {
+.theme-light .account {
 	background-repeat: no-repeat;
 	background-position: 12px 11px;
 	padding: 0 4px !important;
@@ -1496,16 +1496,16 @@ span.bot-tag {
 	position: relative;
 	margin-bottom: 3px;
 }
-.theme-dark .account .btn {
+.theme-light .account .btn {
 	background: transparent;
 	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
 }
-.theme-dark .account .btn:active {
+.theme-light .account .btn:active {
 	background: rgba(0, 0, 0, 0.26);
 }
-.theme-dark .account .btn-deafen,
-.theme-dark .account .btn-mute {
+.theme-light .account .btn-deafen,
+.theme-light .account .btn-mute {
 	border-right: none;
 }
 #voice-connection { /*<*> VOICE*/
@@ -1522,8 +1522,8 @@ span.bot-tag {
 #voice-connection .btn:active { /*<*>*/
 	background: rgba(0, 0, 0, 0.6);
 }
-.theme-dark .account .btn-deafen,
-.theme-dark .account .btn-settings {
+.theme-light .account .btn-deafen,
+.theme-light .account .btn-settings {
 	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
 }
@@ -1695,7 +1695,7 @@ span.bot-tag {
 	font-size: 16px;
 }
 .bd-minimal .comment,
-.bd-minimal .theme-light .comment {
+.bd-minimal .theme-dark .comment {
 	border-left: none !important;
 	padding-left: 10px;
 }
@@ -1750,7 +1750,7 @@ span.bot-tag {
 .bd-minimal .account .discriminator {
 	display: none;
 }
-.bd-minimal .theme-dark .account .btn-group .btn {
+.bd-minimal .theme-light .account .btn-group .btn {
 	width: 30px;
 }
 .settings .settings-header {
@@ -2159,7 +2159,7 @@ a:link {
 		transform: rotate(360deg) scale(0.9);
 	}
 }
-.theme-dark .account .btn-settings:hover::after {
+.theme-light .account .btn-settings:hover::after {
 	-webkit-transform: translateZ(0);
 	-ms-transform: translateZ(0);
 	transform: translateZ(0);
@@ -2265,8 +2265,8 @@ a:link {
 }
 .friends-table .messages .message-group .comment .markup pre,
 .messages-wrapper .messages .message-group .comment .markup pre,
-.theme-light .friends-table .messages .message-group .comment .markup pre,
-.theme-light .messages-wrapper .messages .message-group .comment .markup pre {
+.theme-dark .friends-table .messages .message-group .comment .markup pre,
+.theme-dark .messages-wrapper .messages .message-group .comment .markup pre {
 	background: rgba(46, 49, 54, 0.32);
 	border-color: #282b30;
 }
@@ -2275,13 +2275,13 @@ a:link {
 	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
 }
 #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected),
-.theme-light #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected) {
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected) {
 	background: rgba(0, 0, 0, 0.29);
 }
 .friends-table .messages .message-group .comment .markup .highlight:hover,
 .messages-wrapper .messages .message-group .comment .markup .highlight:hover,
-.theme-light .friends-table .messages .message-group .comment .markup .highlight:hover,
-.theme-light .messages-wrapper .messages .message-group .comment .markup .highlight:hover {
+.theme-dark .friends-table .messages .message-group .comment .markup .highlight:hover,
+.theme-dark .messages-wrapper .messages .message-group .comment .markup .highlight:hover {
 	background-color: var(--main-color) !important;
 }
 .user-settings-modal.settings {
@@ -2308,7 +2308,7 @@ a:link {
 	border: none !important;
 }
 .channel-textarea-autocomplete-inner ul li,
-.theme-light .channel-textarea-autocomplete-inner ul li {
+.theme-dark .channel-textarea-autocomplete-inner ul li {
 	color: rgba(255,255,255,.6);
 }
 .channel-textarea-autocomplete ul li.active {
@@ -2435,9 +2435,9 @@ img.image {
 	box-shadow: none !important;
 	border-radius: 40px;
 }
-.theme-dark .account .btn-deafen,
-.theme-dark .account .btn-mute,
-.theme-dark .account .btn-settings {
+.theme-light .account .btn-deafen,
+.theme-light .account .btn-mute,
+.theme-light .account .btn-settings {
 	background: rgba(0, 0, 0, 0.45);
 	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
@@ -2518,7 +2518,7 @@ img.image {
 	margin-top: 28px;
 }
 .header-toolbar button.active,
-.theme-light .header-toolbar button.active {
+.theme-dark .header-toolbar button.active {
 	background-color: transparent;
 	opacity: 1;
 }
@@ -2616,7 +2616,7 @@ img.image {
 	background-image: url(https://discordapp.com/assets/0f1f2dff98b5e2099086e303d9be0dad.svg);
 }
 .chat .title-wrap .topic .highlight,
-.theme-light .chat .title-wrap .topic .highlight {
+.theme-dark .chat .title-wrap .topic .highlight {
 	border-radius: 4px;
 }
 .markdown-modal {
@@ -2699,7 +2699,7 @@ img.image {
 	background-color: rgba(100, 61, 167, 0.71);
 }
 .chat .has-more button,
-.theme-light .chat .has-more button {
+.theme-dark .chat .has-more button {
 	background: rgba(0, 0, 0, 0.52);
 	border: none;
 }
@@ -2766,35 +2766,35 @@ form.auth-form {
 }
 .diversity-selector .popout,
 .emoji-picker .diversity-selector .popout,
-.bda-light .emoji-picker .diversity-selector .popout {
+.bda-dark .emoji-picker .diversity-selector .popout {
 	background: rgba(0, 0, 0, 0.3);
 	border: 1px solid rgba(0, 0, 0, 0.7);
 }
 .emoji-picker .dimmer.visible,
-.bda-light .emoji-picker .dimmer.visible {
+.bda-dark .emoji-picker .dimmer.visible {
 	pointer-events: auto;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 #friends .friends-header,
-.theme-light #friends .friends-header {
+.theme-dark #friends .friends-header {
 	border-bottom: 1px solid transparent;
 	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .06);
 	box-shadow: 0 1px 0 rgba(0, 0, 0, .06);
 }
 #friends .friends-table .friends-table-header,
-.theme-light #friends .friends-table .friends-table-header {
+.theme-dark #friends .friends-table .friends-table-header {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 #friends .friends-table .friends-table-header .friends-column-separator,
-.theme-light #friends .friends-table .friends-table-header .friends-column-separator {
+.theme-dark #friends .friends-table .friends-table-header .friends-column-separator {
 	background-color: rgba(255, 255, 255, 0.04);
 }
 #friends .friends-table .friends-table-header .friends-column,
-.theme-light #friends .friends-table .friends-table-header .friends-column {
+.theme-dark #friends .friends-table .friends-table-header .friends-column {
 	color: hsla(0, 0%, 100%, 0.5);
 }
 #friends .friends-table .friends-table-header .friends-column::after,
-.theme-light #friends .friends-table .friends-table-header .friends-column::after {
+.theme-dark #friends .friends-table .friends-table-header .friends-column::after {
 	color: hsla(0, 0%, 100%, 0.5);
 }
 .emoji-picker .category {
@@ -2827,7 +2827,7 @@ form.auth-form {
 .emoji-picker .no-search-results {
 	color: #B2B2B2;
 }
-.theme-light.context-menu,
+.theme-dark.context-menu,
 .context-menu {
 	background: rgba(0, 0, 0, 0.7);
 	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .82), 0 1px 4px rgba(0, 0, 0, .1);
@@ -2838,18 +2838,18 @@ form.auth-form {
 	color: var(--main-color) !important;
 }
 .context-menu .item-subMenu,
-.theme-light.context-menu .item-subMenu {
+.theme-dark.context-menu .item-subMenu {
 	background: transparent url(https://discordapp.com/assets/1988164a7c55346d32117b151f4e319d.svg) no-repeat 155px 50%;
 }
 .context-menu .item-subMenu:hover,
-.theme-light.context-menu .item-subMenu:hover {
+.theme-dark.context-menu .item-subMenu:hover {
 	background: rgba(0, 0, 0, 0.69) url(https://discordapp.com/assets/e4afe52f6863408a35654a6e5fd69ba9.svg) no-repeat 155px 50%;
 }
 .context-menu .item-group,
-.theme-light.context-menu .item-group {
+.theme-dark.context-menu .item-group {
 	border-top-color: hsla(0, 0%, 100%, 0.05);
 }
-.theme-light.context-menu .context-menu,
+.theme-dark.context-menu .context-menu,
 .context-menu .context-menu {
 	background: rgba(0, 0, 0, 0.6);
 	border-color: transparent;
@@ -2895,11 +2895,11 @@ form.auth-form {
 .form .Select-control {
 	border-color: transparent;
 }
-.search-bar.search-bar-dark input {
+.search-bar.search-bar-light input {
 	background-color: transparent;
 	color: #B6B6B6;
 }
-.search-bar.search-bar-dark {
+.search-bar.search-bar-light {
 	background-color: rgba(0, 0, 0, 0.58);
 	color: #fff !important;
 	border-radius: 3px;
@@ -3316,42 +3316,42 @@ div#bd-pub-button:hover {
 #pubs-container {
 	background: rgba(0, 0, 0, .7);
 }
-.bda-light #pubs-footer,
-.bda-light #pubs-header,
+.bda-dark #pubs-footer,
+.bda-dark #pubs-header,
 #pubs-footer,
 #pubs-header {
 	background: rgba(0, 0, 0, .9);
 }
-.bda-light #pubs-header button,
+.bda-dark #pubs-header button,
 #pubs-header button {
 	background-color: var(--main-color);
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
-.bda-light #pubs-header button:hover,
+.bda-dark #pubs-header button:hover,
 #pubs-header button:hover {
 	background-color: var(--hover-color);
 }
-.bda-light .server-row,
+.bda-dark .server-row,
 .server-row {
 	background-color: rgba(0, 0, 0, 0.8) !important;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
-.bda-light .server-info button,
+.bda-dark .server-info button,
 .server-info button {
 	background-color: var(--main-color);
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
-.bda-light .server-info button:hover,
+.bda-dark .server-info button:hover,
 .server-info button:hover {
 	background-color: var(--hover-color);
 }
 #pubs-header button {
 	color: #fff;
 }
-.bda-light #pubs-sterm,
+.bda-dark #pubs-sterm,
 #pubs-sterm {
 	background: rgba(0, 0, 0, 0.8) !important;
 	-webkit-transition: all .3s ease-in-out;
@@ -3368,7 +3368,7 @@ div#bd-pub-button:hover {
 .bd-dropdown-list {
 	background: transparent !important;
 }
-.bda-light .bd-dropdown-list ul li,
+.bda-dark .bd-dropdown-list ul li,
 .bd-dropdown-list ul li {
 	background: rgba(0, 0, 0, .5) !important;
 }
@@ -3459,28 +3459,28 @@ div#bd-pub-button:hover {
 .search-bar input:focus {
 	border-color: var(--main-color);
 }
-.bda-light #bda-qem,
+.bda-dark #bda-qem,
 #bda-qem {
 	background: rgba(0, 0, 0, .5) !important;
 	border-bottom: 1px solid rgba(30, 30, 30, .3) !important;
 }
-.bda-light #bda-qem-favourite-container,
-.bda-light #bda-qem-twitch-container,
-.bda-light .emoji-picker,
+.bda-dark #bda-qem-favourite-container,
+.bda-dark #bda-qem-twitch-container,
+.bda-dark .emoji-picker,
 #bda-qem-favourite-container,
 #bda-qem-twitch-container,
 .emoji-picker {
 	background: rgba(0, 0, 0, .5) !important;
 }
-.bda-light #bda-qem button.active,
+.bda-dark #bda-qem button.active,
 #bda-qem button.active {
 	background-color: var(--main-color) !important;
 }
-.bda-light #bda-qem button:not(.active):hover,
+.bda-dark #bda-qem button:not(.active):hover,
 #bda-qem button:not(.active):hover {
 	background: var(--hover-color) !important;
 }
-.bda-light #bda-qem button,
+.bda-dark #bda-qem button,
 #bda-qem button {
 	background: transparent !important;
 	border: none !important;
@@ -3490,13 +3490,13 @@ div#bd-pub-button:hover {
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
-.bda-light .emoji-picker .scroller .emoji-item,
+.bda-dark .emoji-picker .scroller .emoji-item,
 .emoji-picker .scroller .emoji-item {
 	border-radius: 5px;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
-.bda-light .emoji-picker .scroller .emoji-item.selected,
+.bda-dark .emoji-picker .scroller .emoji-item.selected,
 .emoji-picker .scroller .emoji-item.selected {
 	background-color: var(--main-color) !important;
 }
@@ -3683,24 +3683,24 @@ button:active {
 	transform: scale(.9);
 }
 #voice-connection .btn,
-.theme-dark .account .btn {
+.theme-light .account .btn {
 	background: transparent !important;
 	border: none;
 }
 #voice-connection .btn-disconnect,
 #voice-connection .btn-info,
-.theme-dark .account .btn-settings,
-.theme-dark .account .btn-deafen,
-.theme-dark .account .btn-mute {
+.theme-light .account .btn-settings,
+.theme-light .account .btn-deafen,
+.theme-light .account .btn-mute {
 	-webkit-transition: all .1s ease-in-out;
 	transition: all .1s ease-in-out;
 	border-radius: 0px;
 }
-.theme-dark .account .btn-group {
+.theme-light .account .btn-group {
 	position: absolute;
 	right: 4px;
 }
-.theme-dark .account .btn-group,
+.theme-light .account .btn-group,
 #voice-connection .btn-group {
 	border-radius: 15px;
 	background-color: rgba(0, 0, 0, .3);
@@ -3719,30 +3719,30 @@ button:active {
 	background-size: 20px;
 	opacity: .3;
 }
-.theme-dark .account .btn-mute,
-.theme-dark .account .btn-deafen,
+.theme-light .account .btn-mute,
+.theme-light .account .btn-deafen,
 #voice-connection .btn-info {
 	border-right: 1px solid rgba(255, 255, 255, .2);
 	height: 26px;
 	bottom: 3px;
 }
-.theme-dark .account .btn-mute::after {
+.theme-light .account .btn-mute::after {
 	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg) !important;
 	background-position: center;
 	background-size: 20px;
 }
-.theme-dark .account .btn-mute:hover::after {
+.theme-light .account .btn-mute:hover::after {
 	opacity: .6;
 }
-.theme-dark .account .btn-deafen::after {
+.theme-light .account .btn-deafen::after {
 	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/volume_up.svg) !important;
 	background-position: center;
 	background-size: 20px;
 }
-.theme-dark .account .btn-deafen:hover::after {
+.theme-light .account .btn-deafen:hover::after {
 	opacity: .6;
 }
-.theme-dark .account .btn-settings::after {
+.theme-light .account .btn-settings::after {
 	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/settings.svg) !important;
 	background-position: center;
 	background-size: 20px;
@@ -3753,12 +3753,12 @@ button:active {
 	background-size: 120%;
 }
 .icon-muted,
-.theme-dark .account .btn-mute.disabled::after {
+.theme-light .account .btn-mute.disabled::after {
 	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic_off.svg) !important;
 	background-position: center;
 }
 .icon-deafened,
-.theme-dark .account .btn-deafen.disabled::after {
+.theme-light .account .btn-deafen.disabled::after {
 	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/volume_off.svg) !important;
 	background-position: center;
 }
@@ -3769,7 +3769,7 @@ button:active {
 	-webkit-transform: scale(1) !important;
 	transform: scale(1) !important;
 }
-.theme-dark .account .btn:active {
+.theme-light .account .btn:active {
 	-webkit-transform: scale(1) !important;
 	transform: scale(1) !important;
 }
@@ -3779,7 +3779,7 @@ button:active {
 	transition: transform .1s ease-in-out;
 	transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
 }
-.theme-dark .account .btn::after {
+.theme-light .account .btn::after {
 	-webkit-transition: -webkit-transform .1s ease-in-out;
 	transition: -webkit-transform .1s ease-in-out;
 	transition: transform .1s ease-in-out;
@@ -3790,17 +3790,17 @@ button:active {
 	-webkit-transform: scale(.9) !important;
 	transform: scale(.9) !important;
 }
-.theme-dark .account .btn:active::after {
+.theme-light .account .btn:active::after {
 	-webkit-transform: scale(.9) !important;
 	transform: scale(.9) !important;
 }
-.theme-dark .account .btn-settings:active {
+.theme-light .account .btn-settings:active {
 	-webkit-transform: scale(.9) !important;
 	transform: scale(.9) !important;
 }
-.theme-dark .account .btn-mute:hover::after,
-.theme-dark .account .btn-deafen:hover::after,
-.theme-dark .account .btn-settings:hover::after {
+.theme-light .account .btn-mute:hover::after,
+.theme-light .account .btn-deafen:hover::after,
+.theme-light .account .btn-settings:hover::after {
 	opacity: .7;
 }
 .guild-channels .channel .icon.popout-open,
@@ -3952,10 +3952,10 @@ progress {
 progress::-webkit-progress-value {
 	background: var(--main-color) !important;
 }
-.theme-dark .radio-theme label {
+.theme-light .radio-theme label {
 	border-color: #333539;
 }
-.theme-dark .radio-theme input[type=radio]:checked~label {
+.theme-light .radio-theme input[type=radio]:checked~label {
 	border-color: var(--main-color);
 }
 #friends .friends-table .friends-row .friends-column-guilds .avatar-small {
@@ -4166,7 +4166,7 @@ line {
 	-webkit-animation: pulsate-active 1s infinite alternate;
 	animation: pulsate-active 1s infinite alternate;
 }
-.theme-dark .account .btn-deafen::before {
+.theme-light .account .btn-deafen::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -4180,26 +4180,26 @@ line {
 	background-repeat: no-repeat;
 	opacity: 0;
 }
-.theme-dark .account .btn-deafen:hover::before {
+.theme-light .account .btn-deafen:hover::before {
 	-webkit-animation: opacity-fade-reverse 2s infinite alternate;
 	animation: opacity-fade-reverse 2s infinite alternate;
 }
-.theme-dark .account .btn-deafen:hover::after {
+.theme-light .account .btn-deafen:hover::after {
 	-webkit-animation: opacity-fade 2s infinite alternate;
 	animation: opacity-fade 2s infinite alternate;
 }
-.theme-dark .account .btn-deafen::after,
-.theme-dark .account .btn-deafen::before {
+.theme-light .account .btn-deafen::after,
+.theme-light .account .btn-deafen::before {
 	-webkit-transition: opacity .1s ease-in-out, -webkit-transform .1s ease-in-out;
 	transition: opacity .1s ease-in-out, -webkit-transform .1s ease-in-out;
 	transition: opacity .1s ease-in-out, transform .1s ease-in-out;
 	transition: opacity .1s ease-in-out, transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
 }
-.theme-dark .account .btn-deafen.disabled::before {
+.theme-light .account .btn-deafen.disabled::before {
 	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/volume_up.svg);
 	background-position: center;
 }
-.theme-dark .account .btn-mute::before {
+.theme-light .account .btn-mute::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -4213,27 +4213,27 @@ line {
 	background-repeat: no-repeat;
 	opacity: 0;
 }
-.theme-dark .account .btn-mute:hover::before {
+.theme-light .account .btn-mute:hover::before {
 	-webkit-animation: opacity-fade-reverse 2s infinite alternate;
 	animation: opacity-fade-reverse 2s infinite alternate;
 }
-.theme-dark .account .btn-mute:hover::after {
+.theme-light .account .btn-mute:hover::after {
 	-webkit-animation: opacity-fade 2s infinite alternate;
 	animation: opacity-fade 2s infinite alternate;
 }
-.theme-dark .account .btn-mute::after,
-.theme-dark .account .btn-mute::before {
+.theme-light .account .btn-mute::after,
+.theme-light .account .btn-mute::before {
 	-webkit-transition: opacity .1s ease-in-out, -webkit-transform .1s ease-in-out;
 	transition: opacity .1s ease-in-out, -webkit-transform .1s ease-in-out;
 	transition: opacity .1s ease-in-out, transform .1s ease-in-out;
 	transition: opacity .1s ease-in-out, transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
 }
-.theme-dark .account .btn-mute.disabled::before {
+.theme-light .account .btn-mute.disabled::before {
 	background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg);
 	background-position: center;
 }
-.theme-dark .account .btn-mute:active::before,
-.theme-dark .account .btn-deafen:active::before {
+.theme-light .account .btn-mute:active::before,
+.theme-light .account .btn-deafen:active::before {
 	-webkit-transform: scale(.9);
 	transform: scale(.9);
 }
@@ -4539,7 +4539,7 @@ span[style='background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR
 .emote-container:active #rmenu {
 	opacity: 0;
 }
-.bda-light #bda-qem button:active,
+.bda-dark #bda-qem button:active,
 #bda-qem button:active {
 	-webkit-transform: none;
 	transform: none;
@@ -4815,13 +4815,13 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 #searchBarInner>.buttonClose:last-child {
 	margin: 0 5px 0 10px;
 }
-..theme-dark account .discriminator {
+..theme-light account .discriminator {
 	color: #fff !important;
 	border: none !important;
 	padding: 3px;
 	opacity: .3 !important;
 }
-.theme-dark .account .discriminator:hover {
+.theme-light .account .discriminator:hover {
 	background: transparent !important;
 	opacity: .7 !important;
 }
@@ -5343,19 +5343,19 @@ pre:hover .copybutton {
 	color: var(--main-color) !important;
 }
 .chat .private-channel-call .btn-icon,
-.theme-light .chat .private-channel-call .btn-icon {
+.theme-dark .chat .private-channel-call .btn-icon {
 	background: rgba(0, 0, 0, .3);
 }
 .chat .private-channel-call .btn-icon:hover,
-.theme-light .chat .private-channel-call .btn-icon:hover {
+.theme-dark .chat .private-channel-call .btn-icon:hover {
 	background: rgba(0, 0, 0, .5);
 }
 .chat .private-channel-call .btn-icon::after,
-.theme-light .chat .private-channel-call .btn-icon::after {
+.theme-dark .chat .private-channel-call .btn-icon::after {
 	opacity: .7;
 }
 .chat .private-channel-call .btn-icon:hover::after,
-.theme-light .chat .private-channel-call .btn-icon:hover::after {
+.theme-dark .chat .private-channel-call .btn-icon:hover::after {
 	opacity: 1;
 }
 .settings #bd-pane .settings-panel {
@@ -5374,7 +5374,7 @@ ul.bda-slist {
 	color: #909090;
 }
 .message-group a,
-.theme-light .message-group a {
+.theme-dark .message-group a {
 	color: var(--main-color);
 }
 .channel-textarea .channel-textarea-inner textarea {
@@ -5389,14 +5389,14 @@ ul.bda-slist {
 	color: var(--main-color);
 }
 .context-menu .item,
-.theme-light.context-menu .item {
+.theme-dark.context-menu .item {
 	color: rgba(255, 255, 255, .6);
 	border-radius: 3px;
 	-webkit-transition: all .1s ease-in-out;
 	transition: all .1s ease-in-out;
 }
 .context-menu .item:hover,
-.theme-light.context-menu .item:hover {
+.theme-dark.context-menu .item:hover {
 	background-color: rgba(0, 0, 0, 0.69);
 	background-image: none;
 	color: #fff;
@@ -5435,23 +5435,23 @@ ul.bda-slist {
 .emoji {
 	position: relative;
 }
-.chat > .content .messages .message-group a, .theme-light .chat>.content .messages .message-group a code.inline {
+.chat > .content .messages .message-group a, .theme-dark .chat>.content .messages .message-group a code.inline {
 	color: var(--main-color) !important;
 }
 
 /* EMBED LINKS */
 .message-group .embed,
-.theme-light .message-group .embed {
+.theme-dark .message-group .embed {
 	background-color: transparent;
 	border-color: transparent;
 }
 .message-group .embed-wrapper .embed-color-pill,
-.theme-light .message-group .embed-wrapper .embed-color-pill {
+.theme-dark .message-group .embed-wrapper .embed-color-pill {
 	background-color: hsla(0, 0%, 95%, .1) !important;
 	border-radius: 0;
 }
 .message-group .embed .embed-author-name,
-.theme-light .message-group .embed .embed-author-name {
+.theme-dark .message-group .embed .embed-author-name {
 	color: var(--main-color) !important;
 }
 
@@ -5609,12 +5609,12 @@ ul.bda-slist {
 
 /* CHANNEL TEXTAREA GUARD COUNTDOWN */
 .channel-textarea-guard .countdown,
-.theme-light .channel-textarea-guard .countdown {
+.theme-dark .channel-textarea-guard .countdown {
 	color: var(--main-color);
 	text-shadow: 0 0 1px;
 }
 .channel-textarea-guard .countdown-number,
-.theme-light .channel-textarea-guard .countdown-number {
+.theme-dark .channel-textarea-guard .countdown-number {
 	background-color: rgba(0, 0, 0, .5);
 	border-color: transparent;
 }
@@ -5694,7 +5694,7 @@ ul.bda-slist {
 	width: 100%;
 }
 .system-message-content a,
-.theme-light .system-message-content a {
+.theme-dark .system-message-content a {
 	color: var(--main-color) !important;
 }
 
@@ -5968,25 +5968,25 @@ ul.bda-slist {
 }
 
 /* ACCOUNT AVATAR & STATUS */
-.theme-dark .account .avatar-small {
+.theme-light .account .avatar-small {
 	background-size: 100%;
 	margin-left: 5px;
 	background-repeat: no-repeat;
 	-webkit-transition: all .15s ease-in-out;
 	transition: all .15s ease-in-out;
 }
-.theme-dark .account .avatar-small:hover,
-.theme-dark .account .avatar-small.popout-open {
+.theme-light .account .avatar-small:hover,
+.theme-light .account .avatar-small.popout-open {
 	width: 50px;
 	height: 50px;
 	opacity: 1;
 }
-.bd-minimal .theme-dark .account .avatar-small:hover,
-.bd-minimal .theme-dark .account .avatar-small.popout-open {
+.bd-minimal .theme-light .account .avatar-small:hover,
+.bd-minimal .theme-light .account .avatar-small.popout-open {
 	width: 40px;
 	height: 40px;
 }
-.theme-dark .account .avatar-small::after {
+.theme-light .account .avatar-small::after {
 	content: "Status";
 	position: absolute;
 	width: 100%;
@@ -6005,28 +6005,28 @@ ul.bda-slist {
 	-webkit-transition: all .15s ease-in-out;
 	transition: all .15s ease-in-out;
 }
-.theme-dark .account .avatar-small:hover::after {
+.theme-light .account .avatar-small:hover::after {
 	opacity: 1;
 }
-.theme-dark .account .avatar-small:hover::after,
-.theme-dark .account .avatar-small.popout-open::after {
+.theme-light .account .avatar-small:hover::after,
+.theme-light .account .avatar-small.popout-open::after {
 	font-size: 10px;
 	line-height: 50px;
 }
-.bd-minimal .theme-dark .account .avatar-small:hover::after,
-.bd-minimal .theme-dark .account .avatar-small.popout-open::after {
+.bd-minimal .theme-light .account .avatar-small:hover::after,
+.bd-minimal .theme-light .account .avatar-small.popout-open::after {
 	font-size: 8px;
 	line-height: 40px;
 }
-.theme-dark .account .account-details .username {
+.theme-light .account .account-details .username {
 	-webkit-transition: all .15s ease-in-out;
 	transition: all .15s ease-in-out;
 }
-.theme-dark .account .avatar-small:hover + .account-details .username,
-.theme-dark .account .avatar-small.popout-open + .account-details .username {
+.theme-light .account .avatar-small:hover + .account-details .username,
+.theme-light .account .avatar-small.popout-open + .account-details .username {
 	max-width: 52px;
 }
-.theme-dark .account .status {
+.theme-light .account .status {
 	border: none !important;
 	top: calc(90% - 6.5px);
 	left: calc(90% - 6.5px);
@@ -6477,7 +6477,7 @@ img::before {
 /* SEARCH BAR CLEAR BUTTON */
 .search-bar-clear,
 .emoji-picker .search-bar-clear,
-.search-bar-dark .search-bar-clear {
+.search-bar-light .search-bar-clear {
 	background: transparent;
 }
 .search-bar-clear::after,
@@ -6486,17 +6486,17 @@ img::before {
 .emoji-picker .search-bar-clear::after,
 .emoji-picker .search-bar-clear.active::after,
 .emoji-picker .search-bar-clear.active::before,
-.search-bar-dark .search-bar-clear::after,
-.search-bar-dark .search-bar-clear::before,
-.search-bar-dark .search-bar-clear.active::after,
-.search-bar-dark .search-bar-clear.active::before {
+.search-bar-light .search-bar-clear::after,
+.search-bar-light .search-bar-clear::before,
+.search-bar-light .search-bar-clear.active::after,
+.search-bar-light .search-bar-clear.active::before {
 	background: rgba(100, 100, 100, .7);
 }
 
 /* FRIENDS PAGE */
 #friends .friends-header .tab-bar .tab-bar-item,
 #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary,
-.theme-light #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
 	color: hsla(0, 0%, 100%, .6);
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-green {
@@ -6507,12 +6507,12 @@ img::before {
 	background-color: var(--hover-color) !important;
 }
 #friends .friends-table .friend-table-add-wrapper .friend-table-add-header,
-.theme-light #friends .friends-table .friend-table-add-wrapper .friend-table-add-header {
+.theme-dark #friends .friends-table .friend-table-add-wrapper .friend-table-add-header {
 	background: transparent;
 	border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 .add-friend-input-wrapper,
-.theme-light .add-friend-input-wrapper {
+.theme-dark .add-friend-input-wrapper {
 	background-color: rgba(0, 0, 0, .3);
 	border-color: transparent;
 }
@@ -6531,17 +6531,17 @@ img::before {
 }
 
 #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary,
-.theme-light #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
 	background-color: transparent;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected),
-.theme-light #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
 	background-color: rgba(0, 0, 0, 0.29);
 }
 #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected,
-.theme-light #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
 	background-color: var(--main-color);
 	color: #fff;
 }
@@ -6554,19 +6554,19 @@ img::before {
 	animation: none;
 }
 #friends .friends-table .friend-table-add-wrapper h2,
-.theme-light #friends .friends-table .friend-table-add-wrapper h2 {
+.theme-dark #friends .friends-table .friend-table-add-wrapper h2 {
 	color: hsla(0, 0%, 100%, .7);
 }
-.theme-light #friends .friends-table .friends-row .discord-tag,
-.theme-light #friends .friends-table .friends-row .friends-suggestion-platforms {
+.theme-dark #friends .friends-table .friends-row .discord-tag,
+.theme-dark #friends .friends-table .friends-row .friends-suggestion-platforms {
 	opacity: .7;
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action,
-.theme-light #friends .friends-table .friends-row .friends-column-actions .friends-action {
+.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
 	background-color: var(--main-color);
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action:hover,
-.theme-light #friends .friends-table .friends-row .friends-column-actions .friends-action:hover {
+.theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action:hover {
 	background-color: var(--hover-color);
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-add:hover,
@@ -6726,7 +6726,7 @@ img::before {
 
 /* SCROLLBAR */
 .chat > .content:first-child .scroller-wrap::-webkit-scrollbar-thumb,
-.theme-light .chat > .content:first-child .scroller-wrap::-webkit-scrollbar-thumb {
+.theme-dark .chat > .content:first-child .scroller-wrap::-webkit-scrollbar-thumb {
 	background-color: var(--main-color);
 }
 .scroller-wrap .scroller::-webkit-scrollbar-thumb {
@@ -6765,41 +6765,41 @@ img::before {
 	width: 14px;
 	height: 14px;
 }
-.bda-light .emoji-picker .scroller::-webkit-scrollbar-thumb,
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb,
 .emoji-picker .scroller::-webkit-scrollbar-thumb {
 	background-color: var(--main-color) !important;
 	border-radius: 10px !important;
 	border-color: transparent !important;
 }
-.bda-light .emoji-picker .scroller::-webkit-scrollbar-thumb:active,
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb:active,
 .emoji-picker .scroller::-webkit-scrollbar-thumb:active {
 	background-color: var(--hover-color) !important;
 }
-.bda-light .emoji-picker .scroller::-webkit-scrollbar,
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar,
 .emoji-picker .scroller::-webkit-scrollbar {
 	background: transparent !important;
 	border: none !important;
 }
-.bda-light .emoji-picker .scroller::-webkit-scrollbar-track,
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-track,
 .emoji-picker .scroller::-webkit-scrollbar-track {
 	background: transparent !important;
 	border: none !important;
 }
-.bda-light .emoji-picker .scroller::-webkit-scrollbar-track-piece,
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-track-piece,
 .emoji-picker .scroller::-webkit-scrollbar-track-piece {
 	background: transparent !important;
 	border: none !important;
 }
-.bda-light .emoji-picker .scroller::-webkit-scrollbar-corner,
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-corner,
 .emoji-picker .scroller::-webkit-scrollbar-corner {
 	background: transparent !important;
 }
-.bda-light #bda-qem-twitch-container .scroller::-webkit-scrollbar,
-.bda-light #bda-qem-twitch-container .scroller::-webkit-scrollbar-track,
-.bda-light #bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece,
-.bda-light #pubs-container .scroller::-webkit-scrollbar,
-.bda-light #pubs-container .scroller::-webkit-scrollbar-track,
-.bda-light #pubs-container .scroller::-webkit-scrollbar-track-piece,
+.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar,
+.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-track,
+.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece,
+.bda-dark #pubs-container .scroller::-webkit-scrollbar,
+.bda-dark #pubs-container .scroller::-webkit-scrollbar-track,
+.bda-dark #pubs-container .scroller::-webkit-scrollbar-track-piece,
 #bda-qem-twitch-container .scroller::-webkit-scrollbar,
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-track,
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-track-piece,
@@ -6809,10 +6809,10 @@ img::before {
 	background-color: transparent !important;
 	border: none !important;
 }
-.bda-light #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb,
-.bda-light #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
-.bda-light #pubs-container .scroller::-webkit-scrollbar-thumb,
-.bda-light .emoji-picker .scroller::-webkit-scrollbar-thumb,
+.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb,
+.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
+.bda-dark #pubs-container .scroller::-webkit-scrollbar-thumb,
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb,
 #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb,
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb,
 #pubs-container .scroller::-webkit-scrollbar-thumb,
@@ -6820,44 +6820,44 @@ img::before {
 	background-color: var(--main-color) !important;
 	border-color: transparent !important;
 }
-.bda-light #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb:active,
-.bda-light #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb:active,
-.bda-light #pubs-container .scroller::-webkit-scrollbar-thumb:active,
-.bda-light .emoji-picker .scroller::-webkit-scrollbar-thumb:active,
+.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb:active,
+.bda-dark #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb:active,
+.bda-dark #pubs-container .scroller::-webkit-scrollbar-thumb:active,
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar-thumb:active,
 #bda-qem-favourite-container .scroller::-webkit-scrollbar-thumb:active,
 #bda-qem-twitch-container .scroller::-webkit-scrollbar-thumb:active,
 #pubs-container .scroller::-webkit-scrollbar-thumb:active,
 .emoji-picker .scroller::-webkit-scrollbar-thumb:active {
 	background-color: var(--hover-color) !important;
 }
-.bda-light #bda-qem-favourite-container .scroller::-webkit-scrollbar,
-.bda-light #bda-qem-favourite-container .scroller::-webkit-scrollbar-track,
-.bda-light #bda-qem-favourite-container .scroller::-webkit-scrollbar-track-piece,
+.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar,
+.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-track,
+.bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar-track-piece,
 #bda-qem-favourite-container .scroller::-webkit-scrollbar,
 #bda-qem-favourite-container .scroller::-webkit-scrollbar-track,
 #bda-qem-favourite-container .scroller::-webkit-scrollbar-track-piece {
 	background-color: transparent !important;
 	border: none !important;
 }
-.bda-light #pubs-container .scroller::-webkit-scrollbar,
+.bda-dark #pubs-container .scroller::-webkit-scrollbar,
 #pubs-container .scroller::-webkit-scrollbar {
 	background-color: rgba(0, 0, 0, .8) !important;
 }
-.bda-light #pubs-container .scroller::-webkit-scrollbar-thumb,
+.bda-dark #pubs-container .scroller::-webkit-scrollbar-thumb,
 #pubs-container .scroller::-webkit-scrollbar-thumb {
 	border-radius: 10px !important;
 }
-.bda-light .bd-dropdown .bd-dropdown-list ul::-webkit-scrollbar,
+.bda-dark .bd-dropdown .bd-dropdown-list ul::-webkit-scrollbar,
 .bd-dropdown .bd-dropdown-list ul::-webkit-scrollbar,
 .server-description::-webkit-scrollbar {
 	width: 14px;
 }
-.bda-light .bd-dropdown .bd-dropdown-list ul::-webkit-scrollbar-track,
+.bda-dark .bd-dropdown .bd-dropdown-list ul::-webkit-scrollbar-track,
 .bd-dropdown .bd-dropdown-list ul::-webkit-scrollbar-track,
 .server-description::-webkit-scrollbar-track {
 	background-color: rgba(0, 0, 0, .5) !important;
 }
-.bda-light .bd-dropdown .bd-dropdown-list ul::-webkit-scrollbar-thumb,
+.bda-dark .bd-dropdown .bd-dropdown-list ul::-webkit-scrollbar-thumb,
 .bd-dropdown .bd-dropdown-list ul::-webkit-scrollbar-thumb,
 .server-description::-webkit-scrollbar-thumb {
 	background-clip: padding-box;
@@ -7541,10 +7541,10 @@ img::before {
 	font-weight: 600;
 	pointer-events: none;
 }
-.radio-theme.1dark::after {
-	content: "Light Version";
+.radio-theme.dark::after {
+	content: "Dark Version";
 }
-.radio-theme.1dark::before {
+.radio-theme.dark::before {
 	content: "";
 	position: absolute;
 	top: 4px;
@@ -7557,51 +7557,51 @@ img::before {
 }
 
 /* LIGHT VERSION */
-.theme-dark #friends .friends-table .friend-table-add-wrapper .friend-table-add-header {
+.theme-light #friends .friends-table .friend-table-add-wrapper .friend-table-add-header {
 	background: rgba(0, 0, 0, 0.1) !important;
 }
-.theme-dark .channel-members h2 {
+.theme-light .channel-members h2 {
 	background: rgba(0, 0, 0, 0.1) !important;
 }
-.theme-dark .guilds-wrapper{
+.theme-light .guilds-wrapper{
 	background: rgba(0, 0, 0, 0) !important;
 }
-.theme-dark .account .btn-group{
+.theme-light .account .btn-group{
 	background: rgba(0, 0, 0, 0.4) !important;
 	margin-right: 5px; /*<*>*/
 }
-.theme-dark #voice-connection .btn-group {
+.theme-light #voice-connection .btn-group {
 
 }
-.theme-dark .channels-wrap,
-.theme-dark .private-channels .search-bar input {
+.theme-light .channels-wrap,
+.theme-light .private-channels .search-bar input {
 	background: rgba(0, 0, 0, 0) !important;
 }
 /*<*>*/
-.theme-dark .content .flex-spacer,
-.theme-dark .channel-members,
-.theme-dark .title-wrap,
-.theme-dark .friends-header,
-.theme-dark .friends-table,
-.theme-dark .chat .private-channel-call,
-.theme-dark .popout-menu {
+.theme-light .content .flex-spacer,
+.theme-light .channel-members,
+.theme-light .title-wrap,
+.theme-light .friends-header,
+.theme-light .friends-table,
+.theme-light .chat .private-channel-call,
+.theme-light .popout-menu {
 	background: rgba(0, 0, 0, 0) !important;
 }
-.theme-dark .guilds-wrapper .guilds .guild .guild-inner { 
+.theme-light .guilds-wrapper .guilds .guild .guild-inner { 
 	background: rgba(0, 0, 0, 0.5) !important;
 	-webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1) !important;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1) !important;
 }
-.theme-dark .guild-channels ul .channel:not(.selected):hover,
-.theme-dark .private-channels .channel:not(.selected):hover,
-.theme-dark .guild-channels .channel-text:not(.selected):hover,
-.theme-dark #voice-debug-modal #users-section .user-list li:not(.selected):hover {
+.theme-light .guild-channels ul .channel:not(.selected):hover,
+.theme-light .private-channels .channel:not(.selected):hover,
+.theme-light .guild-channels .channel-text:not(.selected):hover,
+.theme-light #voice-debug-modal #users-section .user-list li:not(.selected):hover {
 	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 85%, transparent) !important;
 }
 
 /* <*> */
 
-.theme-dark .guild-channels{ /*SERVER CHANNELS*/
+.theme-light .guild-channels{ /*SERVER CHANNELS*/
 	background-color: rgba(0, 0, 0, 0.3) !important;
 	border-right: 1px solid transparent;
 	margin-left: 2vh !important;
@@ -7609,43 +7609,43 @@ img::before {
 	margin-bottom: 0.1vh;
 	-webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%);
 }
-.theme-dark .channel-members { /*MEMBER AREA*/
+.theme-light .channel-members { /*MEMBER AREA*/
 	background-color: rgba(0, 0, 0, 0.3) !important;
 	margin-right: 20px;
 	margin-top: 3px !important;
 	margin-bottom: 2.3vh;
 	-webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%);
 }
-.theme-dark .user-popout .body,
-.theme-dark .user-popout .footer{ /*USER FOOTER*/
+.theme-light .user-popout .body,
+.theme-light .user-popout .footer{ /*USER FOOTER*/
 		background: rgba(0, 0, 0, 0.7) !important;
 }
 /* <*> */
-.theme-dark .guild-channels ul .channel.selected,
-.theme-dark .private-channels .channel.selected,
-.theme-dark .private-channels .search-result.selected,
-.theme-dark .private-channels .search-result:hover,
-.theme-dark .guild-channels .channel-text.selected,
-.theme-dark #voice-debug-modal #users-section .user-list li.selected {
+.theme-light .guild-channels ul .channel.selected,
+.theme-light .private-channels .channel.selected,
+.theme-light .private-channels .search-result.selected,
+.theme-light .private-channels .search-result:hover,
+.theme-light .guild-channels .channel-text.selected,
+.theme-light #voice-debug-modal #users-section .user-list li.selected {
 	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 85%, transparent) !important;
 }
-.theme-dark .add-friend-input-wrapper {
+.theme-light .add-friend-input-wrapper {
 	border-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.theme-dark .friends-table .messages .invite-button,
-.theme-dark .messages-wrapper .messages .invite-button {
+.theme-light .friends-table .messages .invite-button,
+.theme-light .messages-wrapper .messages .invite-button {
 	background-color: rgba(0, 0, 0, 0.5) !important;
 	border-color: rgba(0, 0, 0, 0.1) !important;
 }
-.theme-dark #friends .friends-table .friends-row .friends-column-name,
-.theme-dark #friends .friends-table .friends-row .friends-column-status {
+.theme-light #friends .friends-table .friends-row .friends-column-name,
+.theme-light #friends .friends-table .friends-row .friends-column-status {
 	color: hsla(0, 0%, 100%, .5);
 }
 
-.theme-dark .message-group .comment .markup[style*="rgb(46, 49, 54)"], {
+.theme-light .message-group .comment .markup[style*="rgb(46, 49, 54)"], {
 	color: rgba(255, 255, 255, 0.8) !important;
 }
-.theme-dark .chat .title-wrap .topic::before {
+.theme-light .chat .title-wrap .topic::before {
 	background-color: hsla(0, 0%, 85%, .1);
 }
